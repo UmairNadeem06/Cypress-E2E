@@ -1,12 +1,10 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-  // implement node event listeners here
-  },
-},
-  environment: {
-    registerUrl: "https://naveenautomationlabs.com/opencart/index.php?route=account/register"
-  },
+    baseUrl: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login',
+    env: {
+      registerUrl: 'https://naveenautomationlabs.com/opencart/index.php?route=account/register'
+    }
+  }
 });

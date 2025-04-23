@@ -1,0 +1,15 @@
+{
+    "login": {
+        "email": "umiiawan06@gmail.com",
+        "password": "pvuByp5N47i9f@D"
+
+        },
+
+    "product": {
+        "name": "MacBook"
+    }, 
+
+    "message": {
+        "success": "Success: You have added MacBook to your shopping cart!"
+    }
+}

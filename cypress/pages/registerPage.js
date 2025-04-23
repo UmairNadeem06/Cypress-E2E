@@ -1,15 +1,14 @@
 export class registerPage {
     weblocatores = {
-        firstName: '//input[@name="firstname"]',
-        // Locator for the first name input field using id 
-        // firstName: '#input-firstname'
-        lastName: '//input[@name="lastname"]',
-        email: '//input[@name="email"]',
-        telephone: '//input[@name="telephone"]',
-        password: '//input[@name="password"]',
-        confirmPassword: '//input[@name="confirm"]',
-        agreeCheckBox: '//input[@name="agree"]',   
-        continueBtn: '//input[@value="Continue"]',                           
+      
+        firstName: '#input-firstname',
+        lastName: '#input-lastname',
+        email: '#input-email',
+        telephone: '#input-telephone',
+        password: '#input-password',
+        confirmPassword: '#input-confirm',
+        agreeCheckBox: 'input[name="agree"]',
+        continueBtn: 'input[value="Continue"]'                           
     }
 
     openUrl(){
@@ -46,9 +45,6 @@ export class registerPage {
     clickOnContinueBtn(){
         cy.get(this.weblocatores.continueBtn).click()
     }
-
-
-
 
 }
 
